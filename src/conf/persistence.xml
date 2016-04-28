@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+    <persistence-unit name="LocadoraWebPU" transaction-type="JTA">
+        <provider>org.hibernate.ejb.HibernatePersistence</provider>
+        <jta-data-source>jdbc/locadoraweb</jta-data-source>
+        <provider>org.hibernate.ejb.HibernatePersistence</provider>
+        <class>br.edu.ifsul.modelo.Aluguel</class>
+        <class>br.edu.ifsul.modelo.Autor</class>
+        <class>br.edu.ifsul.modelo.Cantor</class>
+        <class>br.edu.ifsul.modelo.Dependente</class>
+        <class>br.edu.ifsul.modelo.Editora</class>
+        <class>br.edu.ifsul.modelo.Gravadora</class>
+        <class>br.edu.ifsul.modelo.Pessoa</class>
+        <class>br.edu.ifsul.modelo.Produto</class>
+        <class>br.edu.ifsul.modelo.ProdutoDisco</class>
+        <class>br.edu.ifsul.modelo.ProdutoLivro</class>
+        <class>br.edu.ifsul.modelo.Telefone</class>
+    
+        <properties>
+            <property name="hibernate.hbm2ddl.auto" value="update"/>
+            <property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQLDialect"/>
+            <property name="hibernate.transaction.jta.platform" value="org.hibernate.service.jta.platform.internal.SunOneJtaPlatform"/>
+            <property name="hibernate.classloading.use_current_tccl_as_parent" value="false"/>
+        </properties>
+    </persistence-unit>
+</persistence>

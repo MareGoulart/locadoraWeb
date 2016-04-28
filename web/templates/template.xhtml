@@ -23,8 +23,12 @@
                     <p:menu>
                         <p:submenu label="Cadastros">
                             <p:menuitem action="#{controleEditora.listar()}"
-                                        value="Manutenção de Estados"
+                                        value="Manutenção de Editora"
                                         ajax="false"/>
+                            <p:menuitem action="#{controleGravadora.listar()}"
+                                        value="Manutenção de Gravadora"
+                                        ajax="false"/>
+                           
                         </p:submenu>
                     </p:menu>
                 </h:form>

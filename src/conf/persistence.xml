@@ -3,7 +3,6 @@
     <persistence-unit name="LocadoraWebPU" transaction-type="JTA">
         <provider>org.hibernate.ejb.HibernatePersistence</provider>
         <jta-data-source>jdbc/locadoraweb</jta-data-source>
-        <provider>org.hibernate.ejb.HibernatePersistence</provider>
         <class>br.edu.ifsul.modelo.Aluguel</class>
         <class>br.edu.ifsul.modelo.Autor</class>
         <class>br.edu.ifsul.modelo.Cantor</class>
@@ -15,7 +14,6 @@
         <class>br.edu.ifsul.modelo.ProdutoDisco</class>
         <class>br.edu.ifsul.modelo.ProdutoLivro</class>
         <class>br.edu.ifsul.modelo.Telefone</class>
-    
         <properties>
             <property name="hibernate.hbm2ddl.auto" value="update"/>
             <property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQLDialect"/>
